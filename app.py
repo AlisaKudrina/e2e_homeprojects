@@ -22,7 +22,7 @@ def predict():
     x = numpy.array([open_plan,rooms, area, renovation]).reshape(1, -1)
     x = sc_x.transform(x)
     result = model.predict(x)
-    result = sc_y.inverse_tranform(result.reshape(1, -1))
+    result = sc_y.inverse_transform(result.reshape(1, -1))
 
     return str(result[0][0])
 
