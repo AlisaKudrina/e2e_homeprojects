@@ -26,5 +26,8 @@ def predict():
 
     return str(result[0][0])
 
+def newfunc():
+    pass
+
 if __name__ == '__main__':
     app.run(debug=True, port=5444, host='0.0.0.0')
